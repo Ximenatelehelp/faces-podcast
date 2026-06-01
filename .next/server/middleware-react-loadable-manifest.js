@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"pages/index.js -> ../components/CustomCursor\":{\"id\":\"pages/index.js -> ../components/CustomCursor\",\"files\":[\"static/chunks/components_CustomCursor_jsx.js\"]}}"
