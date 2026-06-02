@@ -82,7 +82,6 @@ export default function About() {
               {[
                 { label: 'Spotify', href: 'https://open.spotify.com/show/2aoZ68aUAaCiDhKplSpZxQ' },
                 { label: 'YouTube', href: 'https://youtube.com/@thefacescast' },
-                { label: 'Apple Podcasts', href: '#' },
               ].map((platform) => (
                 <a
                   key={platform.label}

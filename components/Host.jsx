@@ -3,11 +3,11 @@ import { motion, useInView, AnimatePresence } from 'framer-motion'
 
 // Placeholder images — replace src values with real photos
 const photos = [
-  { id: 1, src: '/Images/Cody 1.JPG', alt: 'Cody Hall' },
-  { id: 2, src: '/Images/Cody 2.JPG', alt: 'Cody Hall' },
-  { id: 3, src: '/Images/CODY 3.jpg', alt: 'Cody Hall' },
-  { id: 4, src: '/Images/CODY 4.jpg', alt: 'Cody Hall' },
-  { id: 5, src: '/Images/CODY 5.JPG', alt: 'Cody Hall' },
+  { id: 1, src: '/images/Cody 1.JPG', alt: 'Cody Hall' },
+  { id: 2, src: '/images/Cody 2.JPG', alt: 'Cody Hall' },
+  { id: 3, src: '/images/CODY 3.jpg', alt: 'Cody Hall' },
+  { id: 4, src: '/images/CODY 4.jpg', alt: 'Cody Hall' },
+  { id: 5, src: '/images/CODY 5.JPG', alt: 'Cody Hall' },
 ]
 
 // Credentials
