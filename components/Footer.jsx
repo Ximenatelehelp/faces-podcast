@@ -61,7 +61,7 @@ const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Episodes', href: '#episodes' },
   { label: 'The Host', href: '#host' },
-  { label: 'Be a Guest', href: '#booking' },
+ { label: 'Be a Guest', href: 'https://www.thefacespodcast.com/beaguest' },
 ]
 
 export default function Footer() {

@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
+const guestFormUrl = 'https://www.thefacespodcast.com/beaguest'
+
 const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Episodes', href: '#episodes' },
   { label: 'Host', href: '#host' },
-  { label: 'Be a Guest', href: '#booking' },
+  { label: 'Be a Guest', href: guestFormUrl, external: true },
 ]
 
 export default function Navbar() {
@@ -31,7 +33,6 @@ export default function Navbar() {
         transition={{ duration: 1, ease: [0.25, 0.1, 0, 1] }}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          {/* Logo */}
           <a href="#" className="flex flex-col leading-none">
             <span
               className="text-2xl md:text-3xl font-display font-light text-gold-gradient"
@@ -44,27 +45,30 @@ export default function Navbar() {
             </span>
           </a>
 
-          {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
                 className="text-xs tracking-wide-xl uppercase text-gray-warm hover:text-beige transition-colors duration-300 relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
+
             <a
-              href="#booking"
+              href={guestFormUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xs tracking-wide-xl uppercase px-6 py-2.5 border border-gold/40 text-gold hover:bg-gold hover:text-black-deep transition-all duration-300"
             >
               Apply Now
             </a>
           </nav>
 
-          {/* Mobile Menu Toggle */}
           <button
             className="md:hidden flex flex-col gap-1.5 p-2"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -86,7 +90,6 @@ export default function Navbar() {
         </div>
       </motion.header>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -100,6 +103,8 @@ export default function Navbar() {
               <motion.a
                 key={link.label}
                 href={link.href}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
                 onClick={() => setMenuOpen(false)}
                 className="text-4xl font-display font-light text-beige hover:text-gold transition-colors"
                 style={{ fontFamily: 'var(--font-display)' }}
@@ -110,10 +115,13 @@ export default function Navbar() {
                 {link.label}
               </motion.a>
             ))}
+
             <motion.a
-              href="#booking"
+              href={guestFormUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
-              className="text-sm tracking-ultra uppercase px-10 py-4 border border-gold/40 text-gold mt-4"
+              className="text-sm tracking-ultra uppercase px-10 py-4 border border-gold/40 text-gold"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.35 }}

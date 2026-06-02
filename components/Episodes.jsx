@@ -127,11 +127,9 @@ function EpisodeCard({ episode, index }) {
     </motion.div>
   )
 }
-
 export default function Episodes() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
-
   return (
     <section id="episodes" className="section-pad bg-black-deep relative" ref={ref}>
       {/* Ambient glow */}
@@ -180,42 +178,13 @@ export default function Episodes() {
           </div>
         </div>
 
-        {/* Episodes grid */}
+                {/* Episodes grid */}
         <div className="grid md:grid-cols-3 gap-8">
           {episodes.map((ep, i) => (
             <EpisodeCard key={ep.number} episode={ep} index={i} />
           ))}
         </div>
 
-        {/* Streaming platforms */}
-        <motion.div
-          className="mt-20 pt-12 border-t border-gold/10"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <p className="text-center text-xs tracking-ultra uppercase text-gray-muted mb-8">
-            Also available on
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-10">
-            {[
-              { label: 'YouTube', href: 'https://youtube.com/@thefacescast' },
-              { label: 'Spotify', href: 'https://open.spotify.com/show/2aoZ68aUAaCiDhKplSpZxQ' },
-              { label: 'TikTok', href: 'https://www.tiktok.com/@the.faces.podcast' },
-            ].map((p) => (
-              <a
-                key={p.label}
-                href={p.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-body font-light text-gray-warm hover:text-gold transition-colors duration-300 tracking-wide"
-              >
-                {p.label}
-              </a>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   )
