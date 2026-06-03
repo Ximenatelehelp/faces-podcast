@@ -33,18 +33,17 @@ export default function Navbar() {
         transition={{ duration: 1, ease: [0.25, 0.1, 0, 1] }}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <a href="#" className="flex flex-col leading-none">
-            <span
-              className="text-2xl md:text-3xl font-display font-light text-gold-gradient"
-              style={{ fontFamily: 'var(--font-display)' }}
-            >
-              The Faces
-            </span>
-            <span className="text-[9px] tracking-ultra text-gray-warm uppercase mt-0.5">
-              Entrepreneurs Are People Too
-            </span>
+
+          {/* LOGO */}
+          <a href="#" className="flex items-center">
+            <img
+              src="/images/logo.png"
+              alt="The Faces Podcast"
+              className="h-14 md:h-16 w-auto"
+            />
           </a>
 
+          {/* DESKTOP MENU */}
           <nav className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <a
@@ -69,6 +68,7 @@ export default function Navbar() {
             </a>
           </nav>
 
+          {/* MOBILE MENU BUTTON */}
           <button
             className="md:hidden flex flex-col gap-1.5 p-2"
             onClick={() => setMenuOpen(!menuOpen)}
