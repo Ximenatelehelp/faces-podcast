@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
-const guestFormUrl = 'https://www.thefacespodcast.com/beaguest'
+const guestFormUrl = 'https://telehelping.wixstudio.com/becomeaguest'
 
 export default function Booking() {
   const ref = useRef(null)
@@ -14,9 +14,10 @@ export default function Booking() {
       ref={ref}
     >
       <div
-  className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] opacity-5"
-  style={{ background: 'radial-gradient(ellipse, #C9A84C 0%, transparent 70%)' }}
-/>
+        className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] opacity-5"
+        style={{ background: 'radial-gradient(ellipse, #C9A84C 0%, transparent 70%)' }}
+      />
+
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-16">
           <motion.div
@@ -66,7 +67,7 @@ export default function Booking() {
         >
           <a
             href={guestFormUrl}
-            target="_self"
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold-light text-black-deep px-10 py-5 text-sm tracking-wide-xl uppercase font-medium transition-all duration-300"
           >
@@ -80,4 +81,3 @@ export default function Booking() {
       </div>
     </section>
   )
-}
