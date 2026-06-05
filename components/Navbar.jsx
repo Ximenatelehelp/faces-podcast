@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const guestFormUrl = 'https://www.thefacespodcast.com/beaguest'
+const guestFormUrl = 'https://telehelping.wixstudio.com/becomeaguest'
 
 const navLinks = [
   { label: 'About', href: '#about' },
