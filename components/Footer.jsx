@@ -61,7 +61,7 @@ const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Episodes', href: '#episodes' },
   { label: 'The Host', href: '#host' },
- { label: 'Be a Guest', href: 'https://www.thefacespodcast.com/beaguest' },
+ { label: 'Be a Guest', href: 'https://telehelping.wixstudio.com/becomeaguest'},
 ]
 
 export default function Footer() {
