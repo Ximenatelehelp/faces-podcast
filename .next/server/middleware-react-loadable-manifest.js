@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"pages/index.js -> ../components/CustomCursor\":{\"id\":\"pages/index.js -> ../components/CustomCursor\",\"files\":[\"static/chunks/components_CustomCursor_jsx.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST='{"pages/index.js -> ../components/CustomCursor":{"id":7928,"files":["static/chunks/928.b3c8ac987fbce1e3.js"]}}';
