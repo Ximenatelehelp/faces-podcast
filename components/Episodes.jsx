@@ -3,14 +3,6 @@ import { motion, useInView } from 'framer-motion'
 
 const episodes = [
   {
-    number: 100,
-    guest: 'Jesse Ramos',
-    title: 'Building Empires from Nothing',
-    youtubeId: 'PZz8EBc3Rko',
-    thumbnail: `https://img.youtube.com/vi/PZz8EBc3Rko/maxresdefault.jpg`,
-    tags: ['Entrepreneurship', 'Growth'],
-  },
-  {
     number: 99,
     guest: 'David Arkin',
     title: 'The Art of Strategic Exits',
@@ -19,12 +11,20 @@ const episodes = [
     tags: ['Strategy', 'Business'],
   },
   {
-    number: 98,
-    guest: 'Heather McLean',
-    title: 'Leadership Beyond the Title',
-    youtubeId: 'YCln482Yy4g',
-    thumbnail: `https://img.youtube.com/vi/YCln482Yy4g/maxresdefault.jpg`,
-    tags: ['Leadership', 'Culture'],
+    number: 100,
+    guest: 'Jesse Ramos',
+    title: 'Building Empires from Nothing',
+    youtubeId: 'PZz8EBc3Rko',
+    thumbnail: `https://img.youtube.com/vi/PZz8EBc3Rko/maxresdefault.jpg`,
+    tags: ['Entrepreneurship', 'Growth'],
+  },
+  {
+    number: 101,
+    guest: 'Ferdinando Esquivel',
+    title: 'Entrepreneurial Leadership',
+    youtubeId: 'TWdy667D6OY',
+    thumbnail: `https://img.youtube.com/vi/TWdy667D6OY/maxresdefault.jpg`,
+    tags: ['Leadership', 'Entrepreneurship'],
   },
 ]
 
