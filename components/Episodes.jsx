@@ -3,12 +3,12 @@ import { motion, useInView } from 'framer-motion'
 
 const episodes = [
   {
-    number: 99,
-    guest: 'David Arkin',
-    title: 'The Art of Strategic Exits',
-    youtubeId: 'BTj-CgwecG8',
-    thumbnail: `https://img.youtube.com/vi/BTj-CgwecG8/maxresdefault.jpg`,
-    tags: ['Strategy', 'Business'],
+    number: 101,
+    guest: 'Ferdinando Esquivel',
+    title: 'Entrepreneurial Leadership',
+    youtubeId: 'TWdy667D6OY',
+    thumbnail: `https://img.youtube.com/vi/TWdy667D6OY/hqdefault.jpg`,
+    tags: ['Leadership', 'Entrepreneurship'],
   },
   {
     number: 100,
@@ -19,12 +19,12 @@ const episodes = [
     tags: ['Entrepreneurship', 'Growth'],
   },
   {
-    number: 101,
-    guest: 'Ferdinando Esquivel',
-    title: 'Entrepreneurial Leadership',
-    youtubeId: 'TWdy667D6OY',
-    thumbnail: `https://img.youtube.com/vi/TWdy667D6OY/maxresdefault.jpg`,
-    tags: ['Leadership', 'Entrepreneurship'],
+    number: 99,
+    guest: 'David Arkin',
+    title: 'The Art of Strategic Exits',
+    youtubeId: 'BTj-CgwecG8',
+    thumbnail: `https://img.youtube.com/vi/BTj-CgwecG8/maxresdefault.jpg`,
+    tags: ['Strategy', 'Business'],
   },
 ]
 
