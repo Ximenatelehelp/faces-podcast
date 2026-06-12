@@ -7,7 +7,7 @@ const episodes = [
     guest: 'Ferdinando Esquivel',
     title: 'Entrepreneurial Leadership',
     youtubeId: 'TWdy667D6OY',
-    thumbnail: `https://img.youtube.com/vi/TWdy667D6OY/hqdefault.jpg`,
+    thumbnail: '/images/ferdinando-esquivel.png',
     tags: ['Leadership', 'Entrepreneurship'],
   },
   {
